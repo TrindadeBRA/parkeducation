@@ -11,12 +11,50 @@
 
 .absolute-img {
     position: relative;
+    z-index: 1;
 }
 
 .absolute-img::after {
-    content: url("http://127.0.0.1:5500/assets/imgs/absolute.png");
+    content: url("/assets/imgs/absolute.png");
     position: absolute;
     top: -90px;
     right: -100px;
     transform: scale(0.7);
+    z-index: -1;
+}
+
+.shape-img {
+    position: relative;
+    z-index: 0;
+}
+
+.shape-img:after {
+    position: absolute;
+    content: url("/assets/imgs/shape.png");
+    top: -100px;
+    right: 60px;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 769px) {
+    .mobonly {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .deskonly {
+        display: none !important;
+    }
+
+    .absolute-img::after {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        transform: scale(0.7);
+    }
+
+    .shape-img:after {
+        content: unset;
+    }
 }

@@ -23,6 +23,7 @@
         }
     </script>
     <title>Park Education - Dia dos Namorados</title>
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/favcon.jpg">
     <script src="./assets/js/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,16 +36,17 @@
     <section class="flex items-center py-8 bg-rose">
         <div class="container mx-auto">
             <div class="flex items-center">
-                <img src="./assets/imgs/logo.png" alt="Logotipo" class="max-w-[150px]">
+                <img src="./assets/imgs/logo.png" alt="Logotipo" class="max-w-[150px] mx-auto sm:mx-0">
             </div>
         </div>
     </section>
     
-    <img src="./assets/imgs/banner.jpg" alt="" srcset="">
+    <img src="./assets/imgs/banner.jpg" alt="" srcset="" class="deskonly">
+    <img src="./assets/imgs/banner-mobile.png" alt="" srcset="" class="mobonly">
     
     <section class="flex items-center py-10 bg-white2">
         <div class="container mx-auto">
-            <div class="flex items-center max-w-[75%] mx-auto">
+            <div class="flex items-center sm:max-w-[65%] mx-auto px-2 sm:px-0">
                 <p class="font-syncopate font-bold text-center text-2xl">Cadastre-se abaixo para garantir sua vaga e o presente especial.</p>
             </div>
         </div>
@@ -52,11 +54,14 @@
 
     <section class="flex items-center py-8 bg-white2">
         <div class="container mx-auto">
-            <div class="flex">
-                <div class="w-[50%] mx-8">
-                    <img src="./assets/imgs/side-form.png" alt="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama." title="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama.">
+            <div class="flex flex-col sm:flex-row items-center">
+                <div class="w-full sm:w-[50%] sm:mx-8 mb-8 sm:mb-0 shape-img">
+                    <p class="font-degular text-right text-2xl mx-auto w-[80%] sm:w-[65%] ">No mês dos namorados, matricule-se em um dos nossos cursos de  fluência e <b>ganhe o curso "Job Interview"</b> para presentear quem você ama.*</p>
+                    <p class="font-degular text-right mx-auto w-[80%] sm:w-[65%]">
+                        <small class="font-degular text-right w-full">*Confira condições na unidade Park mais próxima</small>
+                    </p>
                 </div>
-                <div class="w-[50%] mx-8">
+                <div class="w-full sm:w-[50%] px-8 sm:px-0 sm:mx-8">
                     <form class="flex flex-col gap-5" action="http://promocaopark.com.br/mailer.php" method="POST" enctype="multipart/form-data">
 
                         <input type="text" name="name" id="name" placeholder="NOME" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required>
@@ -81,9 +86,9 @@
         </div>
     </section>
 
-    <section class="flex items-center py-20 bg-white">
+    <section class="flex items-center pt-20 bg-white">
         <div class="container mx-auto">
-            <div class="flex flex-col items-center max-w-[75%] mx-auto absolute-img">
+            <div class="flex flex-col items-center px-6 sm:px-0 sm:max-w-[65%] mx-auto sm:mb-8 absolute-img">
                 <p class="font-syncopate font-bold text-center text-2xl mb-4">Conquiste a fluência definitiva e o garanta o futuro do seu amor.</p>
                 <p class="font-degular text-center text-2xl">Além do melhor método de ensino de idiomas, <b>a Park tem diversos cursos voltados para desenvolvimento da sua carreira.</b></p>
             </div>
@@ -91,12 +96,12 @@
     </section>
 
     <section class="flex items-center py-8 bg-white">
-        <div class="container mx-auto">
-            <div class="flex">
-                <div class="w-[50%] mx-8">
-                    <img src="./assets/imgs/fluencia.png" alt="" class="max-h-96 mx-auto">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col sm:flex-row items-center">
+                <div class="w-full sm:w-[50%] sm:mx-8">
+                    <img src="./assets/imgs/fluencia.png" alt="" class="mx-auto w-full py-6 mb-6 sm:mb-0">
                 </div>
-                <div class="w-[50%] mx-8 flex gap-5 flex-col">
+                <div class="w-full sm:w-[50%] sm:mx-8 flex gap-5 flex-col">
 
                     <p class="font-degular text-xl">Com o curso "Job Interview", o aluno entende os segredos por trás de uma entrevista de emprego internacional.</p>
 
