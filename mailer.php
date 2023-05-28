@@ -71,7 +71,9 @@ try {
     $mail->Body = $msg;
 
     $mail->send();
-    echo 'Email enviado com sucesso.';
+    $redirect_url = "https://promocaopark.com.br?emailsend=true";
+    header("Location: " . $redirect_url);
+    exit();
 
   }
 
