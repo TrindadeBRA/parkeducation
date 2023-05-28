@@ -1,0 +1,22 @@
+#submit {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    border-color: #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+.absolute-img {
+    position: relative;
+}
+
+.absolute-img::after {
+    content: url("http://127.0.0.1:5500/assets/imgs/absolute.png");
+    position: absolute;
+    top: -90px;
+    right: -100px;
+    transform: scale(0.7);
+}

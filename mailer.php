@@ -1,36 +1,81 @@
 <?php
-require './vendor/autoload.php'; // Importar o arquivo autoload do PHPMailer
+require 'vendor/autoload.php';
 
-// Verificar se o formulário foi submetido
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Dados do formulário
-  $estado = $_POST['estado'];
-  $cidade = $_POST['cidade'];
-  $unidade = $_POST['unidade'];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  var_dump($_POST);
+try {
+  
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    // Dados do formulário
+    $name = $_POST['name'];
+    $telphone = $_POST['telphone'];
+    $email = $_POST['email'];
+    
+    $jsonData = $_POST['json-data'];
+    $jsonDecoded = json_decode($jsonData, true);
+    
+    if($jsonDecoded["E-mail da unidade"]){
+      $dataEmailUnidade = $jsonDecoded["E-mail da unidade"];
+    }
 
-  // Configurações do PHPMailer
-  $mail = new PHPMailer\PHPMailer\PHPMailer();
-  $mail->isSMTP();
-  $mail->Host = 'smtp.example.com'; // Configure o host SMTP
-  $mail->SMTPAuth = true;
-  $mail->Username = 'seu_email@example.com'; // Configure o e-mail usado para enviar o e-mail
-  $mail->Password = 'sua_senha'; // Configure a senha do e-mail
-  $mail->SMTPSecure = 'tls';
-  $mail->Port = 587;
+    if($jsonDecoded["E-mail Comercial"]){
+      $dataEmailCOmercial = $jsonDecoded["E-mail Comercial"];
+    }
+    
+    if($jsonDecoded["E-mail Backup Park"]){
+      $dataEmailBackup = $jsonDecoded["E-mail Backup Park"];
+    }
+    
+    if($jsonDecoded["Estado"]){
+      $dataEstado = $jsonDecoded["Estado"];
+    }
+    
+    if($jsonDecoded["Cidade"]){
+      $dataCidade = $jsonDecoded["Cidade"];
+    }
+    
+    if($jsonDecoded["Unidade"]){
+      $dataUnidade = $jsonDecoded["Unidade"];
+    }
+    
+    $subject = "[Promo. Dia dos Namorados] - " . $dataUnidade . " - " . $name; 
+    
+    $msg = "Nome: " . $name . "<br>";
+    $msg .= "Email: " . $email . "<br>";
+    $msg .= "Telefone: " . $telphone . "<br>";
+    $msg .= "<br>" . $dataEstado . " - " . $dataCidade . " - " . $dataUnidade;
+    
+    $mail = new PHPMailer(true);
+    $mail->CharSet = 'UTF-8';
+    
+    // Configurações do servidor SMTP
+    $mail->isSMTP();
+    $mail->Host = 'sandbox.smtp.mailtrap.io';
+    $mail->SMTPAuth = true;
+    $mail->Port = 2525;
+    $mail->Username = '6b7d501ab873ed';
+    $mail->Password = 'bd4318119a887d';
 
-  $mail->setFrom('seu_email@example.com', 'Seu Nome'); // Configure o remetente
-  $mail->addAddress('destinatario@example.com', 'Nome do Destinatário'); // Configure o destinatário
+    // Dados do remetente e destinatário
+    $mail->setFrom("contato@promocaopark.com.br");
 
-  $mail->isHTML(true);
-  $mail->Subject = 'Dados do Formulário';
-  $mail->Body = "Estado: $estado<br>Cidade: $cidade<br>Unidade: $unidade";
+    $dataEmailUnidade ? $mail->addAddress($dataEmailUnidade) : "";
+    $dataEmailCOmercial ? $mail->addAddress($dataEmailCOmercial) : "";
+    $dataEmailBackup ? $mail->addAddress($dataEmailBackup) : "";
 
-  // Verificar se o e-mail foi enviado com sucesso
-  if ($mail->send()) {
-    echo "E-mail enviado com sucesso!";
-  } else {
-    echo "Erro ao enviar o e-mail: " . $mail->ErrorInfo;
+    // Conteúdo do email
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body = $msg;
+
+    $mail->send();
+    echo 'Email enviado com sucesso.';
+
   }
+
+
+} catch (Exception $e) {
+    echo 'Houve um erro ao enviar o email: ' . $mail->ErrorInfo;
 }

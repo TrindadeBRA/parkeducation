@@ -32,15 +32,16 @@ function preencherFormulario() {
             }
 
             // Preencher o select de Cidade quando o Estado for selecionado
-            selectEstado.addEventListener("change", function () {
+            selectEstado.addEventListener("change", function (e) {
+
                 // Limpar as opções existentes
                 selectCidade.style.display = "flex";
+                selectCidade.value = e.target.value;
                 selectCidade.innerHTML = "";
                 selectUnidade.innerHTML = "";
 
                 // Adicionar a opção inicial no select de Cidade
                 var optionInicialCidade = document.createElement("option");
-                optionInicialCidade.value = "";
                 optionInicialCidade.text = "CIDADE";
                 optionInicialCidade.disabled = true;
                 optionInicialCidade.selected = true;
@@ -63,7 +64,7 @@ function preencherFormulario() {
 
 
              // Preencher o select de Unidade quando a Cidade for selecionada
-             selectCidade.addEventListener("change", function() {
+             selectCidade.addEventListener("change", function(e) {
                 // Limpar as opções existentes
                 selectUnidade.innerHTML = "";
                 selectUnidade.style.display = "flex";
@@ -93,7 +94,7 @@ function preencherFormulario() {
             });
 
             // Preencher o select de Unidade quando a Cidade for selecionada
-            selectUnidade.addEventListener("change", function() {
+            selectUnidade.addEventListener("change", function(e) {
 
                 // Filtrar as unidades com base na Cidade selecionada
                 var unidadeSelecionada = selectUnidade.value;
@@ -103,13 +104,15 @@ function preencherFormulario() {
                 
                 // Preencher o select de Unidade com base nas unidades filtradas
                 for (var k = 0; k < emails.length; k++) {
-                    var emailsStore = [];
-                    emails[k]["E-mail da unidade"] ? emailsStore.push(emails[k]["E-mail da unidade"]) : "";
-                    emails[k]["E-mail Comercial"] ? emailsStore.push(emails[k]["E-mail Comercial"]) : "";
-                    emails[k]["E-mail Backup Park"] ? emailsStore.push(emails[k]["E-mail Backup Park"]) : "";
+                    var emailsStore = {};
+                    emails[k]["E-mail da unidade"] ? emailsStore["E-mail da unidade"] =  emails[k]["E-mail da unidade"] : "";
+                    emails[k]["E-mail Comercial"] ? emailsStore["E-mail Comercial"] =  emails[k]["E-mail Comercial"] : "";
+                    emails[k]["E-mail Backup Park"] ? emailsStore["E-mail Backup Park"] =  emails[k]["E-mail Backup Park"] : "";
+                    emails[k]["Estado"] ? emailsStore["Estado"] =  emails[k]["Estado"] : "";
+                    emails[k]["Cidade"] ? emailsStore["Cidade"] =  emails[k]["Cidade"] : "";
+                    emails[k]["Unidade"] ? emailsStore["Unidade"] =  emails[k]["Unidade"] : "";
                 }
-                var inputHidden = document.getElementById("emails-data");
-                console.log(";;;;;;;;;;;;;;;;;;;;;::", inputHidden)
+                var inputHidden = document.getElementById("json-data");
                 inputHidden.value = JSON.stringify(emailsStore);
             });
   

@@ -16,6 +16,7 @@
                     },
                     fontFamily: {
                         'syncopate': ['Syncopate', 'sans-serif'],
+                        'degular': ['Arial', 'sans-serif'],
                     }
                 },
             }
@@ -26,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body onload="preencherFormulario()">
@@ -42,7 +44,7 @@
     
     <section class="flex items-center py-10 bg-white2">
         <div class="container mx-auto">
-            <div class="flex items-center max-w-[50%] mx-auto">
+            <div class="flex items-center max-w-[75%] mx-auto">
                 <p class="font-syncopate font-bold text-center text-2xl">Cadastre-se abaixo para garantir sua vaga e o presente especial.</p>
             </div>
         </div>
@@ -55,34 +57,55 @@
                     <img src="./assets/imgs/side-form.png" alt="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama." title="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama.">
                 </div>
                 <div class="w-[50%] mx-8">
-                    <form class="flex flex-col gap-5" action="mailer.php" method="POST" enctype="multipart/form-data">
+                    <form class="flex flex-col gap-5" action="http://promocaopark.com.br/mailer.php" method="POST" enctype="multipart/form-data">
 
-                        <input type="text" name="name" id="name" placeholder="NOME" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase">
+                        <input type="text" name="name" id="name" placeholder="NOME" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required>
 
-                        <input type="tel" name="telphone" id="telphone" placeholder="TELEFONE" oninput="formatarTelefone(this)" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase">
+                        <input type="tel" name="telphone" id="telphone" placeholder="TELEFONE" oninput="formatarTelefone(this)" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required>
 
-                        <input type="email" name="email" id="email" placeholder="E-MAIL" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase">
+                        <input type="email" name="email" id="email" placeholder="E-MAIL" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required>
 
-                        <select id="estado" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase"></select>
+                        <select id="estado" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required></select>
                 
-                        <select id="cidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase" style="display: none;"></select>
+                        <select id="cidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" style="display: none;" required></select>
                 
-                        <select id="unidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase" style="display: none;"></select>
-                
-                        <input type="submit" value="CADASTRAR" class="w-fit mx-auto px-3 py-2 border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase text-2xl">
+                        <select id="unidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" style="display: none;" required></select>
+                        
+                        <input type="hidden" class="hidden" name="json-data" id="json-data" value="">
+                        
+                        <input type="submit" value="CADASTRAR" class="w-fit mx-auto px-3 py-2 border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase text-2xl" id="submit">
 
-                        <input type="hidden" class="hidden" name="emails-data" id="emails-data" value="">
                     </form>
                 </div>
               </div>
         </div>
     </section>
 
-    <section class="flex items-center py-10 bg-white">
+    <section class="flex items-center py-20 bg-white">
         <div class="container mx-auto">
-            <div class="flex items-center max-w-[50%] mx-auto">
-                <p class="font-syncopate font-bold text-center text-2xl">Conquiste a fluência definitiva e o garanta o futuro do seu amor.</p>
+            <div class="flex flex-col items-center max-w-[75%] mx-auto absolute-img">
+                <p class="font-syncopate font-bold text-center text-2xl mb-4">Conquiste a fluência definitiva e o garanta o futuro do seu amor.</p>
+                <p class="font-degular text-center text-2xl">Além do melhor método de ensino de idiomas, <b>a Park tem diversos cursos voltados para desenvolvimento da sua carreira.</b></p>
             </div>
+        </div>
+    </section>
+
+    <section class="flex items-center py-8 bg-white">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="w-[50%] mx-8">
+                    <img src="./assets/imgs/fluencia.png" alt="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama." title="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama.">
+                </div>
+                <div class="w-[50%] mx-8 flex gap-5 flex-col">
+
+                    <p class="font-degular text-xl">Com o curso "Job Interview", o aluno entende os segredos por trás de uma entrevista de emprego internacional.</p>
+
+                    <p class="font-degular text-xl">Com uma abordagem prática, quem receber esse curso de presente aprenderá a falar sobre suas experiências e habilidades com confiança e profissionalismo, a fim de participar de entrevistas de emprego e processos internacionais de seleção.</p>
+
+                    <p class="font-degular text-xl">Este não será só mais um presente, mas uma experiência e conhecimentos valiosos para construir um futuro ainda mais promissor ao lado de quem você ama.</p>
+                    
+                </div>
+              </div>
         </div>
     </section>
 
