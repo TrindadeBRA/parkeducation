@@ -38,6 +38,14 @@ function preencherFormulario() {
                 // Limpar as opções existentes
                 selectCidade.value = e.target.value;
                 selectCidade.innerHTML = "";
+                
+                selectUnidade.innerHTML = "";
+                var optionUnidadeInicial = document.createElement("option");
+                optionUnidadeInicial.value = "";
+                optionUnidadeInicial.text = "ESCOLHA UMA UNIDADE PARK";
+                optionUnidadeInicial.disabled = true;
+                optionUnidadeInicial.selected = true;
+                selectUnidade.appendChild(optionUnidadeInicial);
                 selectUnidade.selectedIndex = 0;
 
                 // Adicionar a opção inicial no select de Cidade
