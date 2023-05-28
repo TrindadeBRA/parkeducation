@@ -148,5 +148,21 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   });
+
+  // Espera até que o documento esteja totalmente carregado
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtém a referência para o botão close-notification pelo ID
+    var closeButton = document.getElementById("close-notification");
+  
+    // Obtém a referência para o elemento submitmail pelo ID
+    var submitMail = document.getElementById("submitmail");
+  
+    // Adiciona um ouvinte de evento de clique ao botão close-notification
+    closeButton.addEventListener("click", function() {
+      // Adiciona a classe 'hidden' ao elemento submitmail
+      submitMail.classList.add("hidden");
+    });
+  });
+  
   
   
