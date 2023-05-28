@@ -51,12 +51,21 @@ try {
     $mail->CharSet = 'UTF-8';
     
     // Configurações do servidor SMTP
+    // $mail->isSMTP();
+    // $mail->Host = 'sandbox.smtp.mailtrap.io';
+    // $mail->SMTPAuth = true;
+    // $mail->Port = 2525;
+    // $mail->Username = '6b7d501ab873ed';
+    // $mail->Password = 'bd4318119a887d';
+
+
+    // Configurações do servidor SMTP
     $mail->isSMTP();
-    $mail->Host = 'sandbox.smtp.mailtrap.io';
+    $mail->Host = 'mail.promocaopark.com.br';
     $mail->SMTPAuth = true;
-    $mail->Port = 2525;
-    $mail->Username = '6b7d501ab873ed';
-    $mail->Password = 'bd4318119a887d';
+    $mail->Port = 587;
+    $mail->Username = 'contato@promocaopark.com.br';
+    $mail->Password = 'p+ZAqW$KlidA';
 
     // Dados do remetente e destinatário
     $mail->setFrom("contato@promocaopark.com.br");

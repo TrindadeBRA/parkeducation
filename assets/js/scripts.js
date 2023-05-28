@@ -38,7 +38,7 @@ function preencherFormulario() {
                 // Limpar as opções existentes
                 selectCidade.value = e.target.value;
                 selectCidade.innerHTML = "";
-                
+
                 selectUnidade.innerHTML = "";
                 var optionUnidadeInicial = document.createElement("option");
                 optionUnidadeInicial.value = "";
@@ -71,11 +71,11 @@ function preencherFormulario() {
             });
 
 
-             // Preencher o select de Unidade quando a Cidade for selecionada
-             selectCidade.addEventListener("change", function(e) {
+            // Preencher o select de Unidade quando a Cidade for selecionada
+            selectCidade.addEventListener("change", function (e) {
                 // Limpar as opções existentes
                 selectUnidade.innerHTML = "";
-            
+
                 // Adicionar a opção "ESCOLHA UMA UNIDADE PARK" no select de Unidade
                 var optionUnidadeInicial = document.createElement("option");
                 optionUnidadeInicial.value = "";
@@ -83,45 +83,45 @@ function preencherFormulario() {
                 optionUnidadeInicial.disabled = true;
                 optionUnidadeInicial.selected = true;
                 selectUnidade.appendChild(optionUnidadeInicial);
-            
+
                 // Filtrar as unidades com base na Cidade selecionada
                 var cidadeSelecionada = selectCidade.value;
-                var unidades = json.filter(function(item) {
-                return item.Cidade === cidadeSelecionada;
+                var unidades = json.filter(function (item) {
+                    return item.Cidade === cidadeSelecionada;
                 });
-            
+
                 // Preencher o select de Unidade com base nas unidades filtradas
                 for (var k = 0; k < unidades.length; k++) {
-                var optionUnidade = document.createElement("option");
-                optionUnidade.value = unidades[k].Unidade;
-                optionUnidade.text = unidades[k].Unidade;
-                selectUnidade.appendChild(optionUnidade);
+                    var optionUnidade = document.createElement("option");
+                    optionUnidade.value = unidades[k].Unidade;
+                    optionUnidade.text = unidades[k].Unidade;
+                    selectUnidade.appendChild(optionUnidade);
                 }
             });
 
             // Preencher o select de Unidade quando a Cidade for selecionada
-            selectUnidade.addEventListener("change", function(e) {
+            selectUnidade.addEventListener("change", function (e) {
 
                 // Filtrar as unidades com base na Cidade selecionada
                 var unidadeSelecionada = selectUnidade.value;
-                var emails = json.filter(function(item) {
-                return item.Unidade === unidadeSelecionada;
+                var emails = json.filter(function (item) {
+                    return item.Unidade === unidadeSelecionada;
                 });
-                
+
                 // Preencher o select de Unidade com base nas unidades filtradas
                 for (var k = 0; k < emails.length; k++) {
                     var emailsStore = {};
-                    emails[k]["E-mail da unidade"] ? emailsStore["E-mail da unidade"] =  emails[k]["E-mail da unidade"] : "";
-                    emails[k]["E-mail Comercial"] ? emailsStore["E-mail Comercial"] =  emails[k]["E-mail Comercial"] : "";
-                    emails[k]["E-mail Backup Park"] ? emailsStore["E-mail Backup Park"] =  emails[k]["E-mail Backup Park"] : "";
-                    emails[k]["Estado"] ? emailsStore["Estado"] =  emails[k]["Estado"] : "";
-                    emails[k]["Cidade"] ? emailsStore["Cidade"] =  emails[k]["Cidade"] : "";
-                    emails[k]["Unidade"] ? emailsStore["Unidade"] =  emails[k]["Unidade"] : "";
+                    emails[k]["E-mail da unidade"] ? emailsStore["E-mail da unidade"] = emails[k]["E-mail da unidade"] : "";
+                    emails[k]["E-mail Comercial"] ? emailsStore["E-mail Comercial"] = emails[k]["E-mail Comercial"] : "";
+                    emails[k]["E-mail Backup Park"] ? emailsStore["E-mail Backup Park"] = emails[k]["E-mail Backup Park"] : "";
+                    emails[k]["Estado"] ? emailsStore["Estado"] = emails[k]["Estado"] : "";
+                    emails[k]["Cidade"] ? emailsStore["Cidade"] = emails[k]["Cidade"] : "";
+                    emails[k]["Unidade"] ? emailsStore["Unidade"] = emails[k]["Unidade"] : "";
                 }
                 var inputHidden = document.getElementById("json-data");
                 inputHidden.value = JSON.stringify(emailsStore);
             });
-  
+
         })
         .catch(error => console.log('Ocorreu um erro ao carregar o JSON:', error));
 }
@@ -129,11 +129,24 @@ function preencherFormulario() {
 function formatarTelefone(input) {
     // Remove todos os caracteres que não são dígitos
     var telefone = input.value.replace(/\D/g, '');
-  
+
     // Formata o telefone de acordo com a máscara (11) 00000-0000
     var formatado = telefone.replace(/^(\d{2})(\d{0,5})(\d{0,4}).*/, '($1) $2-$3');
-  
+
     // Atualiza o valor do input
     input.value = formatado;
-  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Verifica se o parâmetro "emailsend" é igual a "true"
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("emailsend") === "true") {
+      // Remove a classe "hidden" do elemento com o ID "submitmail"
+      const submitMailElement = document.getElementById("submitmail");
+      if (submitMailElement) {
+        submitMailElement.classList.remove("hidden");
+      }
+    }
+  });
+  
   

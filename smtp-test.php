@@ -1,55 +1,50 @@
 <?php
 
-require 'vendor/autoload.php';
+// require 'vendor/autoload.php';
+
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// $smtpServer = 'sandbox.smtp.mailtrap.io';
+// $smtpPort = 2525;
+// $smtpUsername = '6b7d501ab873ed';
+// $smtpPassword = 'bd4318119a887d';
 
 // Configurações do servidor SMTP MAIL TRAP
-$smtpServer = 'sandbox.smtp.mailtrap.io';
-$smtpPort = 2525;
-$smtpUsername = '6b7d501ab873ed';
-$smtpPassword = 'bd4318119a887d';
-
-// Configurações do servidor SMTP MAIL TRAP
-// $smtpServer = 'mail.mfzsolucoes.com.br';
-// $smtpPort = 587;
-// $smtpUsername = 'parkidiomas@mfzsolucoes.com.br';
-// $smtpPassword = '(J6$Hn)pI^UD';
-
-// Endereço de e-mail de origem
-$fromEmail = 'origem@example.com';
-
-// Endereço de e-mail de destino
-$toEmail = 'trindadebra@gmail.com';
-$toEmail2 = 'brunofrancoweb@gmail.com';
-
-// Assunto e corpo do e-mail
-$subject = 'Teste de envio de e-mail';
-$body = 'Este é um teste de envio de e-mail via SMTP.';
+$smtpServer = 'mail.promocaopark.com.br';
+$smtpPort = 587;
+$smtpUsername = 'contato@promocaopark.com.br';
+$smtpPassword = 'p+ZAqW$KlidA';
 
 
-$mail = new PHPMailer(true);
-$mail->isSMTP();
-$mail->Host = $smtpServer;
-$mail->Port = $smtpPort;
-$mail->SMTPAuth = true;
-$mail->Username = $smtpUsername;
-$mail->Password = $smtpPassword;
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-// Configurações adicionais (opcional)
-$mail->CharSet = 'UTF-8';
-$mail->setFrom($fromEmail);
-$mail->addAddress($toEmail);
-$mail->addAddress($toEmail2);
-$mail->Subject = $subject;
-$mail->Body = $body;
 
-// Tenta enviar o e-mail
-if (!$mail->send()) {
-    echo 'Erro ao enviar o e-mail: ' . $mail->ErrorInfo;
-} else {
-    echo 'E-mail enviado com sucesso!';
-}
+
+
+$mailer = new PHPMailer();
+$mailer->IsSMTP();
+$mailer->SMTPDebug = 1;
+$mailer->Port = $smtpPort; //Indica a porta de conexão 
+$mailer->Host = $smtpServer;//Endereço do Host do SMTP 
+$mailer->SMTPAuth = true; //define se haverá ou não autenticação 
+$mailer->Username = $smtpUsername; //Login de autenticação do SMTP
+$mailer->Password = $smtpPassword; //Senha de autenticação do SMTP
+$mailer->FromName = 'Bart S. Locaweb'; //Nome que será exibido
+$mailer->From = 'contato@promocaopark.com.br';
+$mailer->AddAddress('trindadebra@gmail.com','Nome do 
+destinatário');
+//Destinatários
+$mailer->Subject = 'Teste enviado através do PHP Mailer 
+SMTPLW';
+$mailer->Body = 'Este é um teste realizado com o PHP Mailer 
+SMTPLW';
+if(!$mailer->Send())
+{
+echo "Message was not sent";
+echo "Mailer Error: " . $mailer->ErrorInfo; exit; }
+print "E-mail enviado!"
+?>
