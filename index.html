@@ -62,7 +62,7 @@
                     </p>
                 </div>
                 <div class="w-full sm:w-[50%] px-8 sm:px-0 sm:mx-8">
-                    <form class="flex flex-col gap-5" action="http://promocaopark.com.br/mailer.php" method="POST" enctype="multipart/form-data">
+                    <form class="flex flex-col gap-5" action="https://promocaopark.com.br/mailer.php" method="POST" enctype="multipart/form-data">
 
                         <input type="text" name="name" id="name" placeholder="NOME" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required>
 
@@ -72,9 +72,13 @@
 
                         <select id="estado" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required></select>
                 
-                        <select id="cidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" style="display: none;" required></select>
+                        <select id="cidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required>
+                            <option value="" disabled="" selected>CIDADE</option>
+                        </select>
                 
-                        <select id="unidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" style="display: none;" required></select>
+                        <select id="unidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-degular font-degular font-bold focus:border-[#c478ff] uppercase" required>
+                            <option value="" disabled="" selected>ESCOLHA UMA UNIDADE PARK</option>
+                        </select>
                         
                         <input type="hidden" class="hidden" name="json-data" id="json-data" value="">
                         

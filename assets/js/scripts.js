@@ -3,14 +3,15 @@ function preencherFormulario() {
     fetch('./assets/data/data.json')
         .then(response => response.json())
         .then(json => {
+
             var selectEstado = document.getElementById("estado");
             var selectCidade = document.getElementById("cidade");
             var selectUnidade = document.getElementById("unidade");
 
             // Limpar as opções existentes
             selectEstado.innerHTML = "";
-            selectCidade.innerHTML = "";
-            selectUnidade.innerHTML = "";
+            selectCidade.selectedIndex = 0;
+            selectUnidade.selectedIndex = 0;
 
             // Adicionar a opção inicial no select de Estado
             var optionInicialEstado = document.createElement("option");
@@ -35,10 +36,9 @@ function preencherFormulario() {
             selectEstado.addEventListener("change", function (e) {
 
                 // Limpar as opções existentes
-                selectCidade.style.display = "flex";
                 selectCidade.value = e.target.value;
                 selectCidade.innerHTML = "";
-                selectUnidade.innerHTML = "";
+                selectUnidade.selectedIndex = 0;
 
                 // Adicionar a opção inicial no select de Cidade
                 var optionInicialCidade = document.createElement("option");
@@ -67,10 +67,8 @@ function preencherFormulario() {
              selectCidade.addEventListener("change", function(e) {
                 // Limpar as opções existentes
                 selectUnidade.innerHTML = "";
-                selectUnidade.style.display = "flex";
-
             
-                // Adicionar a opção "UNIDADE" no select de Unidade
+                // Adicionar a opção "ESCOLHA UMA UNIDADE PARK" no select de Unidade
                 var optionUnidadeInicial = document.createElement("option");
                 optionUnidadeInicial.value = "";
                 optionUnidadeInicial.text = "ESCOLHA UMA UNIDADE PARK";
