@@ -1,0 +1,613 @@
+[
+    {
+        "Unidades": "BA - ES PITUBA",
+        "Estado": "BA",
+        "Cidade": "Salvador",
+        "Unidade": "Park Pituba",
+        "E-mail da unidade": "pituba.ba@park.education",
+        "E-mail Comercial": "compituba.ba@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "BH - CI SILVA LOBO",
+        "Estado": "MG",
+        "Cidade": "Belo Horizonte",
+        "Unidade": "Park Silva Lobo",
+        "E-mail da unidade": "cisilvalobo.bh@park.education",
+        "E-mail Comercial": "comsilvalobo.bh@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "BH - ES BURITIS",
+        "Estado": "MG",
+        "Cidade": "Belo Horizonte",
+        "Unidade": "Park Buritis",
+        "E-mail da unidade": "esburitis.bh@park.education",
+        "E-mail Comercial": "comburitis.bh@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "CPS - CI SALDANHA",
+        "Estado": "SP",
+        "Cidade": "Piracicaba",
+        "Unidade": "Park Saldanha",
+        "E-mail da unidade": "cisaldanha.cps@park.education",
+        "E-mail Comercial": "comsaldanha.cps@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "CPS - CI VINHEDO",
+        "Estado": "SP",
+        "Cidade": "Vinhedo",
+        "Unidade": "Park Vinhedo",
+        "E-mail da unidade": "civinhedo.campinas@park.education",
+        "E-mail Comercial": "comvinhedo.cps@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "CPS - ES CIDADE NOVA 1",
+        "Estado": "SP",
+        "Cidade": "Campinas",
+        "Unidade": "Park Cidade Nova",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "CPS - ES VILA ITAPURA",
+        "Estado": "SP",
+        "Cidade": "Campinas",
+        "Unidade": "Park Vila Itapura",
+        "E-mail da unidade": "vilaitapura.cps@park.education",
+        "E-mail Comercial": "comvilaitapura.cps@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - CI LAGO SUL",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Lago Sul - QI05",
+        "E-mail da unidade": "cilagosul.df@park.education",
+        "E-mail Comercial": "comlagosul.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES 103 SUL",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Asa Sul - 103 Sul",
+        "E-mail da unidade": "103sul.df@park.education",
+        "E-mail Comercial": "com103sul.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES 204 NORTE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Asa Norte - 204 Norte",
+        "E-mail da unidade": "204norte.df@park.education",
+        "E-mail Comercial": "com204norte.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES 410 NORTE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Asa Norte - 410 Norte",
+        "E-mail da unidade": "asanorteq9.df@park.education",
+        "E-mail Comercial": "comasanorteq9.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES AGUAS CLARAS",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Aguas Claras - Estação Arniqueiras",
+        "E-mail da unidade": "esaguasclaras.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES ASA NORTE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Asa Norte",
+        "E-mail da unidade": "esasanorte.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES ASA SUL",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Asa Sul - 213 Sul",
+        "E-mail da unidade": "esasasul.df@park.education",
+        "E-mail Comercial": "comasasul.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES ESTAÇAO AGUAS CLARAS",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Aguas Claras - Estação Águas Claras",
+        "E-mail da unidade": "estacaoaguasclaras.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES ESTAÇAO CONCESSIONARIAS",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Aguas Claras - Estação Concessionárias",
+        "E-mail da unidade": "esestacaoconcessionarias.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES GAMA SCE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Gama",
+        "E-mail da unidade": "esgamasce.df@park.education",
+        "E-mail Comercial": "comgamasce.rp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES GUARA",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Guará",
+        "E-mail da unidade": "esguara.df@parkidiomas.com.br",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES JARDIM BOTANICO",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Jardim Botânico",
+        "E-mail da unidade": "esjardimbotanico.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES JARDINS MANGUEIRAL",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Jardins Mangueiral",
+        "E-mail da unidade": "esjardinsmangueiral.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES LAGO NORTE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Lago Norte",
+        "E-mail da unidade": "eslagonorte.df@park.education",
+        "E-mail Comercial": "comlagonorte.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES LAGO SUL QI 11",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Lago Sul - QI11",
+        "E-mail da unidade": "qi11lagosul.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES LIBERTY MALL",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Asa Norte - Liberty Mall",
+        "E-mail da unidade": "libertymall.df@park.education",
+        "E-mail Comercial": "comlibertymall.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES NOROESTE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Noroeste",
+        "E-mail da unidade": "noroeste.df@park.education",
+        "E-mail Comercial": "comnoroeste.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES SANTA MARIA",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Santa Maria",
+        "E-mail da unidade": "santamaria.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES SIA",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Sia",
+        "E-mail da unidade": "essia.df@park.education",
+        "E-mail Comercial": "comsia.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES SOBRADINHO",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Sobradinho",
+        "E-mail da unidade": "sobradinho.df@park.education",
+        "E-mail Comercial": "comsobradinho.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES SUDOESTE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Sudoeste",
+        "E-mail da unidade": "essudoeste.df@park.education",
+        "E-mail Comercial": "comsudoeste.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES TAGUATINGA NORTE",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Taguatinga Norte",
+        "E-mail da unidade": "taguatinganorte.df@park.education",
+        "E-mail Comercial": "comtaguatinganorte.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "DF - ES TAGUATINGA SUL",
+        "Estado": "DF",
+        "Cidade": "Brasília",
+        "Unidade": "Taguatinga Sul",
+        "E-mail da unidade": "estaguatingasul.df@park.education",
+        "E-mail Comercial": "comtaguatingasul.df@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "GO - ES LUZIANIA CENTRO",
+        "Estado": "GO",
+        "Cidade": "Luziania",
+        "Unidade": "Park Luziania",
+        "E-mail da unidade": "luziania.centro.go@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "GO - ES OCIDENTAL",
+        "Estado": "GO",
+        "Cidade": "Ocidental",
+        "Unidade": "Park Ocidental",
+        "E-mail da unidade": "ocidental.go@park.education",
+        "E-mail Comercial": "comocidental.go@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "GO - ES RIO VERDE",
+        "Estado": "GO",
+        "Cidade": "Rio Verde",
+        "Unidade": "Park Rio Verde",
+        "E-mail da unidade": "esrioverde.go@park.education",
+        "E-mail Comercial": "comrioverde.go@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "GO - ES SETOR MARISTA",
+        "Estado": "GO",
+        "Cidade": "Goiânia",
+        "Unidade": "Park Setor Marista",
+        "E-mail da unidade": "setormarista.go@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "GO - ES SETOR OESTE",
+        "Estado": "GO",
+        "Cidade": "Goiânia",
+        "Unidade": "Park Setor Oeste",
+        "E-mail da unidade": "essetoroeste.go@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "GO - ES VALPARAISO",
+        "Estado": "GO",
+        "Cidade": "Valparaiso de Goiás",
+        "Unidade": "Park Valparaiso",
+        "E-mail da unidade": "valparaiso.go@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "MG - ES CONGONHAS",
+        "Estado": "MG",
+        "Cidade": "Congonhas",
+        "Unidade": "Park Congonhas",
+        "E-mail da unidade": "congonhas.mg@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "MG - ES CONSELHEIRO LAFAIETE",
+        "Estado": "MG",
+        "Cidade": "Conselheiro Lafaiete",
+        "Unidade": "Park Congonhas",
+        "E-mail da unidade": "conselheirolafaiete.bh@park.education",
+        "E-mail Comercial": "comconselheirolafaiete.bh@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "MG - ES CONTAGEM",
+        "Estado": "MG",
+        "Cidade": "Contagem",
+        "Unidade": "Park Contagem",
+        "E-mail da unidade": "contagem.mg@park.education",
+        "E-mail Comercial": "comcontagem.mg@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "MG - ES VARGINHA",
+        "Estado": "MG",
+        "Cidade": "Varginha",
+        "Unidade": "Park Varginha",
+        "E-mail da unidade": "varginha.mg@park.education",
+        "E-mail Comercial": "comvarginha.mg@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RJ - ES BARRA DA TIJUCA",
+        "Estado": "RJ",
+        "Cidade": "Rio de Janeiro",
+        "Unidade": "Park Barra da Tijuca",
+        "E-mail da unidade": "barradatijuca.rj@park.education",
+        "E-mail Comercial": "combarradatijuca.rj@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RJ - ES COPACABANA",
+        "Estado": "RJ",
+        "Cidade": "Rio de Janeiro",
+        "Unidade": "Park Copacabana",
+        "E-mail da unidade": "copacabana.rj@park.education",
+        "E-mail Comercial": "comcopacabana.rj@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RJ - ES ITAPERUNA",
+        "Estado": "RJ",
+        "Cidade": "Itaperuna",
+        "Unidade": "Park Itaperuna",
+        "E-mail da unidade": "itaperuna.rj@park.education",
+        "E-mail Comercial": "comitaperuna.rj@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RJ - ES RECREIO",
+        "Estado": "RJ",
+        "Cidade": "Rio de Janeiro",
+        "Unidade": "Park Recreio",
+        "E-mail da unidade": "recreio.rj@park.education",
+        "E-mail Comercial": "comrecreio.rj@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RJ - ES VILA ISABEL",
+        "Estado": "RJ",
+        "Cidade": "Rio de Janeiro",
+        "Unidade": "Park Vila Isabel",
+        "E-mail da unidade": "vilaisabel.rj@park.education",
+        "E-mail Comercial": "comvilaisabel.rj@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RP - CI SAO CARLOS",
+        "Estado": "SP",
+        "Cidade": "São Carlos",
+        "Unidade": "Park São Carlos",
+        "E-mail da unidade": "cisaocarlos.rp@park.education",
+        "E-mail Comercial": "comsaocarlos.rp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RP - ES CATANDUVA CENTRO",
+        "Estado": "SP",
+        "Cidade": "Catanduva",
+        "Unidade": "Park Catanduva",
+        "E-mail da unidade": "escatanduvacentro.rp@park.education",
+        "E-mail Comercial": "comcatanduvacentro.rp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RP - ES FRANCA JARDIM VENEZA",
+        "Estado": "SP",
+        "Cidade": "Franca",
+        "Unidade": "Park Jardim Veneza",
+        "E-mail da unidade": "jardimveneza.franca@park.education",
+        "E-mail Comercial": "comjardimveneza.franca@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RP - ES MACENO",
+        "Estado": "SP",
+        "Cidade": "São José do Rio Preto",
+        "Unidade": "Park Maceno",
+        "E-mail da unidade": "esmaceno.rp@park.education",
+        "E-mail Comercial": "commaceno.rp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "RP - ES RIO PRETO CENTRO",
+        "Estado": "SP",
+        "Cidade": "São José do Rio Preto",
+        "Unidade": "Park Rio Preto Centro",
+        "E-mail da unidade": "esriopretocentro.rp@park.education",
+        "E-mail Comercial": "comriopretocentro.rp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SC - ES RIO DO SUL",
+        "Estado": "SC",
+        "Cidade": "Rio do Sul",
+        "Unidade": "Park Rio do Sul",
+        "E-mail da unidade": "riodosul.sc@park.education",
+        "E-mail Comercial": "comriodosul.sc@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SP - CI JUNDIAI",
+        "Estado": "SP",
+        "Cidade": "Jundiaí",
+        "Unidade": "Park Jundiaí",
+        "E-mail da unidade": "cijundiai.sp@park.education",
+        "E-mail Comercial": "comjundiai.sp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SP - CI PINHEIROS",
+        "Estado": "SP",
+        "Cidade": "São Paulo",
+        "Unidade": "Park Pinheiros",
+        "E-mail da unidade": "cipinheiros.sp@park.education",
+        "E-mail Comercial": "compinheiros.sp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SP - ES LG SHOPPING TATUAPE",
+        "Estado": "SP",
+        "Cidade": "São Paulo",
+        "Unidade": "Park Shopping Tatuapé",
+        "E-mail da unidade": "shoppingtatuape.sp@park.education",
+        "E-mail Comercial": "comshoppingtatuape.sp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SP - ES LG SHOPPING WEST PLAZA",
+        "Estado": "SP",
+        "Cidade": "São Paulo",
+        "Unidade": "Park West Plaza",
+        "E-mail da unidade": "westplaza.sp@park.education",
+        "E-mail Comercial": "comwestplaza.sp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SP - ES PRAÇA DA ARVORE",
+        "Estado": "SP",
+        "Cidade": "São Paulo",
+        "Unidade": "Park Praça da Árvore",
+        "E-mail da unidade": "espracadaarvore.sp@park.education",
+        "E-mail Comercial": "compracadaarvore.sp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SP - ES PRAIA GRANDE BOQUEIRAO",
+        "Estado": "SP",
+        "Cidade": "Praia Grande",
+        "Unidade": "Park Boqueirão",
+        "E-mail da unidade": "praiagrandeboqueirao.sp@park.education",
+        "E-mail Comercial": "compraiagrandeboqueirao.sp@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "SPI - ES LORENA",
+        "Estado": "SP",
+        "Cidade": "Lorena",
+        "Unidade": "Park Lorena",
+        "E-mail da unidade": "lorena.spi@park.education",
+        "E-mail Comercial": "comlorena.spi@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES ARAGUARI",
+        "Estado": "MG",
+        "Cidade": "Araguari",
+        "Unidade": "Park Araguari",
+        "E-mail da unidade": "esaraguari.tri@park.education",
+        "E-mail Comercial": "comaraguari.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES ARAXA",
+        "Estado": "MG",
+        "Cidade": "Araxá",
+        "Unidade": "Park Araxá",
+        "E-mail da unidade": "esaraxa.tri@park.education",
+        "E-mail Comercial": "comaraxa.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES DUQUE DE CAXIAS",
+        "Estado": "MG",
+        "Cidade": "Uberlândia",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES ITUIUTABA",
+        "Estado": "MG",
+        "Cidade": "Ituiutaba",
+        "Unidade": "Park Ituiutaba",
+        "E-mail da unidade": "esituiutaba.tri@park.education",
+        "E-mail Comercial": "\tcomituiutaba.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES MONTE CARMELO",
+        "Estado": "MG",
+        "Cidade": "Monte Carmelo",
+        "Unidade": "Park Monte Carmelo",
+        "E-mail da unidade": "montecarmelo.tri@park.education",
+        "E-mail Comercial": "commontecarmelo.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES PATIO SABIA",
+        "Estado": "MG",
+        "Cidade": "Uberlândia",
+        "Unidade": "Park Pátio Sabiá",
+        "E-mail da unidade": "espatiosabia.tri@park.education",
+        "E-mail Comercial": "compatiosabia.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES PATROCINIO",
+        "Estado": "MG",
+        "Cidade": "Patrocínio",
+        "Unidade": "Park Patrocínio",
+        "E-mail da unidade": "espatrocinio.tri@park.education",
+        "E-mail Comercial": "compatrocinio.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES PLANALTO",
+        "Estado": "MG",
+        "Cidade": "Uberlândia",
+        "Unidade": "Park Planalto",
+        "E-mail da unidade": "esplanalto.tri@park.education",
+        "E-mail Comercial": "complanalto.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES SANTA MONICA",
+        "Estado": "MG",
+        "Cidade": "Uberlândia",
+        "Unidade": "Park Santa Mônica",
+        "E-mail da unidade": "essantamonica.tri@park.education",
+        "E-mail Comercial": "comsantamonica.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES UDI PRAÇA PARIS",
+        "Estado": "MG",
+        "Cidade": "Uberlândia",
+        "Unidade": "Park Praça Paris",
+        "E-mail da unidade": "pracaparis.tri@park.education",
+        "E-mail Comercial": "compracaparis.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES AFRANIO R. DA CUNHA",
+        "Estado": "MG",
+        "Cidade": "Uberlândia",
+        "Unidade": "Park Afrânio Rodrigues",
+        "E-mail da unidade": "esafraniorodrigues.tri@park.education",
+        "E-mail Comercial": "comafraniorodrigues.tri@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    },
+    {
+        "Unidades": "TRI - ES URA PRAÇA SHOPPING",
+        "Estado": "MG",
+        "Cidade": "Uberaba",
+        "Unidade": "Park Praça Shopping",
+        "E-mail da unidade": "pracauberabashopping.ura@park.education",
+        "E-mail Comercial": "compracauberabashopping.ura@park.education",
+        "E-mail Backup Park": "parknews@park.education"
+    }
+]
