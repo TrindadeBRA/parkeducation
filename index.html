@@ -1,24 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Formulário</title>
-    <script src="./scripts.js"></script>
-    <script src="./tailwindcss.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: '#fff3f4',
+                        white2: '#fff5f5',
+                    },
+                    fontFamily: {
+                        'syncopate': ['Syncopate', 'sans-serif'],
+                    }
+                },
+            }
+        }
+    </script>
+    <title>Park Education - Dia dos Namorados</title>
+    <script src="./assets/js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body onload="preencherFormulario()">
-  <h1>Formulário</h1>
-  <form>
-    <label for="estado">Estado:</label>
-    <select id="estado"></select>
 
-    <label for="cidade">Cidade:</label>
-    <select id="cidade"></select>
+    <section class="flex items-center py-8 bg-rose">
+        <div class="container mx-auto">
+            <div class="flex items-center">
+                <img src="./assets/imgs/logo.png" alt="Logotipo" class="max-w-[150px]">
+            </div>
+        </div>
+    </section>
+    
+    <img src="./assets/imgs/banner.jpg" alt="" srcset="">
+    
+    <section class="flex items-center py-10 bg-white2">
+        <div class="container mx-auto">
+            <div class="flex items-center max-w-[50%] mx-auto">
+                <p class="font-syncopate font-bold text-center text-2xl">Cadastre-se abaixo para garantir sua vaga e o presente especial.</p>
+            </div>
+        </div>
+    </section>
 
-    <label for="unidade">Nome da Unidade:</label>
-    <select id="unidade"></select>
+    <section class="flex items-center py-8 bg-white2">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="w-[50%] mx-8">
+                    <img src="./assets/imgs/side-form.png" alt="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama." title="No mês dos namorados, matricule-se em um dos nossos cursos de fluência e ganhe o curso 'Job Interview' para presentear quem você ama.">
+                </div>
+                <div class="w-[50%] mx-8">
+                    <form class="flex flex-col gap-5" action="mailer.php" method="POST" enctype="multipart/form-data">
 
-    <input type="submit" value="Enviar">
-  </form>
+                        <input type="text" name="name" id="name" placeholder="NOME" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase">
+
+                        <input type="tel" name="telphone" id="telphone" placeholder="TELEFONE" oninput="formatarTelefone(this)" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase">
+
+                        <input type="email" name="email" id="email" placeholder="E-MAIL" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase">
+
+                        <select id="estado" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase"></select>
+                
+                        <select id="cidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase" style="display: none;"></select>
+                
+                        <select id="unidade" class="border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase" style="display: none;"></select>
+                
+                        <input type="submit" value="CADASTRAR" class="w-fit mx-auto px-3 py-2 border-solid border-black border-4 rounded-xl bg-white2 placeholder:font-bold placeholder:text-black placeholder:font-syncopate font-syncopate font-bold focus:border-[#c478ff] uppercase text-2xl">
+
+                        <input type="hidden" class="hidden" name="emails-data" id="emails-data" value="">
+                    </form>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="flex items-center py-10 bg-white">
+        <div class="container mx-auto">
+            <div class="flex items-center max-w-[50%] mx-auto">
+                <p class="font-syncopate font-bold text-center text-2xl">Conquiste a fluência definitiva e o garanta o futuro do seu amor.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <h1>Formulário</h1>
+
 </body>
+
 </html>
