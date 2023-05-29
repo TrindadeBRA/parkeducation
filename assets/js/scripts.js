@@ -24,6 +24,8 @@ function preencherFormulario() {
             // Filtrar e obter os estados únicos
             var estados = [...new Set(json.map(item => item.Estado))];
 
+            estados.sort()
+
             // Preencher o select de Estado com base nos estados filtrados
             for (var i = 0; i < estados.length; i++) {
                 var optionEstado = document.createElement("option");
@@ -61,6 +63,8 @@ function preencherFormulario() {
                     return item.Estado === estadoSelecionado;
                 }).map(item => item.Cidade))];
 
+                cidades.sort();
+
                 // Preencher o select de Cidade com base nas cidades filtradas
                 for (var j = 0; j < cidades.length; j++) {
                     var optionCidade = document.createElement("option");
@@ -84,17 +88,23 @@ function preencherFormulario() {
                 optionUnidadeInicial.selected = true;
                 selectUnidade.appendChild(optionUnidadeInicial);
 
+
                 // Filtrar as unidades com base na Cidade selecionada
                 var cidadeSelecionada = selectCidade.value;
-                var unidades = json.filter(function (item) {
+
+                var unidades = [...new Set(json.filter(function (item) {
                     return item.Cidade === cidadeSelecionada;
-                });
+                }).map(item => item.Unidade))];
+
+                unidades.sort()
+
+                // console.log("XXXXXXXXXXXXXx", unidades)
 
                 // Preencher o select de Unidade com base nas unidades filtradas
                 for (var k = 0; k < unidades.length; k++) {
                     var optionUnidade = document.createElement("option");
-                    optionUnidade.value = unidades[k].Unidade;
-                    optionUnidade.text = unidades[k].Unidade;
+                    optionUnidade.value = unidades[k];
+                    optionUnidade.text = unidades[k];
                     selectUnidade.appendChild(optionUnidade);
                 }
             });
